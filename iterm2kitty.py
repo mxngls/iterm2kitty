@@ -13,7 +13,7 @@ def convert_to_buf(key_pair, iterm_obj, buf):
     palette = ['Red', 'Green', 'Blue']
 
     if key_pair[0] not in iterm_obj:
-        cloz("Missing key: %s\n check file" % key_pair[0])
+        close("Missing color key: %s\n check iterm colorscheme!" % key_pair[0])
     color_dict = iterm_obj[key_pair[0]]
     hex_color = "#"
     for color in palette:
